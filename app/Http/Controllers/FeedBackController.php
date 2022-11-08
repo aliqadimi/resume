@@ -15,13 +15,16 @@ use RealRashid\SweetAlert\Facades\Alert;
 
 class FeedBackController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function dashboard()
     {
-        if (Auth::check()) {
-            return view('dashboard');
-        }
-        return redirect('/login');
+        return view('dashboard');
     }
+
     /**
      * @param Request $request
      * @return mixed

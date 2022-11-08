@@ -29,6 +29,19 @@
                 <li class="menu-item">
                     <a href="{{route('contacts')}}">Contact</a>
                 </li>
+                @auth
+                    <li class="menu-item">
+                        <a onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();" href="{{ route('logout') }}">
+                            logout
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+
+                    </li>
+                @endauth
+
             </ul>
         </div>
 

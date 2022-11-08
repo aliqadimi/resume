@@ -16,7 +16,7 @@ use const App\Http\Controllers\Auth;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\Site\HomeController::class, 'index']);
+Route::get('/', [\App\Http\Controllers\Site\HomeController::class, 'index'])->name('main');
 Route::get('/download', [\App\Http\Controllers\Site\HomeController::class, 'download'])->name('download');
 
 Auth::routes();
