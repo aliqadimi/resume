@@ -16,9 +16,8 @@ use const App\Http\Controllers\Auth;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [\App\Http\Controllers\Site\HomeController::class, 'index']);
+Route::get('/download', [\App\Http\Controllers\Site\HomeController::class, 'download'])->name('download');
 
 Auth::routes();
 
@@ -35,4 +34,6 @@ Route::group(['prefix' => 'auth'], function () {
 });
 
 
-Route::get('/resume' , [ResumeController::class, 'show'])->name('resume');
+Route::get('/resume', [ResumeController::class, 'show'])->name('resume');
+Route::get('/blogs', [\App\Http\Controllers\Site\BlogController::class, 'index'])->name('blogs');
+Route::get('/contacts', [\App\Http\Controllers\Site\ContactController::class, 'index'])->name('contacts');

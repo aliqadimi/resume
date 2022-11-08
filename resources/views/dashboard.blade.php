@@ -8,8 +8,20 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/iofrm-style.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/iofrm-theme6.css">
+    <style>
+        .img-circle {
+            border-radius: 50%;
+        }
+
+        .profile-user-img {
+            margin: 0 auto;
+            width: 150px;
+            padding: 3px;
+            border: 3px solid #d2d6de;
+        }
+
+    </style>
 </head>
-@include('sweetalert::alert')
 <body>
 <div class="form-body">
     <div class="website-logo">
@@ -18,27 +30,28 @@
         <div class="form-holder">
             <div class="form-content">
                 <div class="form-items">
-                    <h3>Get more things done with Loggin platform.</h3>
-                    <p>Access to the most powerfull tool in the entire design and web industry.</p>
                     <form method="POST" action="{{ route('store.description') }}"
                           enctype="multipart/form-data">>
                         @csrf
-                        <input class="form-control" type="file" name="image" placeholder="your image" required>
+                        <div class="box-body box-profile">
+                            <div class="profile-username text-center"><img class="profile-user-img  img-circle"
+                                                                           src="/uploads/UserProfile/avatar.jpg"
+                                                                           alt="User profile picture"></div>
+                            <br>
+                            <input type="file" name="image" class="form-control">
+
+                        </div>
                         <br>
-                        <input class="form-control" type="text" name="role" placeholder="role" required>
+                        <input class="form-control" type="text" name="role" placeholder="title" required>
 
                         <textarea id="description" name="description" rows="4" cols="50"
                                   placeholder="say anythings about ali">
 
                         </textarea>
                         <div class="form-button">
-                            <button id="submit" type="submit" class="ibtn">Register</button>
+                            <button id="submit" type="submit" class="ibtn">Send</button>
                         </div>
                     </form>
-                    <div class="other-links">
-                        <span>Or register with</span><a href="#">Facebook</a><a href="#">Google</a><a
-                            href="#">Linkedin</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -48,5 +61,7 @@
 <script src="/assets/js/popper.min.js"></script>
 <script src="/assets/js/bootstrap.min.js"></script>
 <script src="/assets/js/main.js"></script>
+@include('sweetalert::alert')
+
 </body>
 </html>

@@ -1,14 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Leven - Resume / CV / vCard Template</title>
+    <title>AliQadimi-Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Leven - Resume / CV / vCard Template" />
-    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, portfolio" />
-    <meta name="author" content="lmpixels" />
+    <meta name="description" content="AliQadimi-Resume"/>
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, portfolio"/>
+    <meta name="author" content="qadimi"/>
     <link rel="shortcut icon" href="favicon.ico">
 
     <link rel="stylesheet" href="{{asset('Site/css/normalize.css')}}" type="text/css">
@@ -41,79 +40,8 @@
     <div id="page_container" class="page-container bg-move-effect" data-animation="transition-flip-in-right">
 
         <!-- Header -->
-        <header id="site_header" class="header">
-            <div class="header-content clearfix">
-
-                <!-- Text Logo -->
-                <div class="text-logo">
-                    <a href="index.html">
-                        <div class="logo-symbol">A</div>
-                        <div class="logo-text">Alex <span>Smith</span></div>
-                    </a>
-                </div>
-                <!-- /Text Logo -->
-
-                <!-- Navigation -->
-                <div class="site-nav mobile-menu-hide">
-                    <ul class="leven-classic-menu site-main-menu">
-                        <li class="menu-item menu-item-has-children">
-                            <a href="index.html">About Me</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item">
-                                    <a href="index.html">About Me 1</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="index-2.html">About Me 2</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="menu-item current-menu-item">
-                            <a href="resume.html">Resume</a>
-                        </li>
-
-                        <li class="menu-item menu-item-has-children">
-                            <a href="portfolio.html">Portfolio</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item">
-                                    <a href="portfolio-2-columns.html">Portfolio 2 Columns</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="portfolio.html">Portfolio 3 Columns</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="portfolio-4-columns.html">Portfolio 4 Columns</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="portfolio-5-columns.html">Portfolio 5 Columns</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="menu-item menu-item-has-children">
-                            <a href="blog.html">Blog</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item">
-                                    <a href="blog.html">Blog 2 Columns</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="blog-3-columns.html">Blog 3 Columns</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="menu-item">
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <a class="menu-toggle mobile-visible">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </header>
-        <!-- /Header -->
+    @include('Site.layouts.header')
+    <!-- /Header -->
 
         <div id="main" class="site-main">
             <div id="main-content" class="single-page-content">
@@ -122,7 +50,7 @@
                     <div class="page-title">
                         <h1>Resume</h1>
                         <div class="page-subtitle">
-                            <h4> 8 Years of Experience</h4>
+                            <h4> 3 Years of Experience</h4>
                         </div>
                     </div>
 
@@ -136,24 +64,9 @@
 
                                 <div id="timeline_1" class="timeline clearfix">
                                     <div class="timeline-item clearfix">
-                                        <h5 class="item-period ">2009</h5>
-                                        <span class="item-company">University of Studies</span>
-                                        <h4 class="item-title">UI Design</h4>
-                                        <p>Duis posuere, quam non imperdiet egestas, eros enim mattis mauris, in posuere lacus arcu quis felis. Etiam interdum erat non enim venenatis fermentum.</p>
-                                    </div>
-
-                                    <div class="timeline-item clearfix">
-                                        <h5 class="item-period ">2008</h5>
-                                        <span class="item-company">University of Studies</span>
-                                        <h4 class="item-title">Graphic Design</h4>
-                                        <p>Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor.</p>
-                                    </div>
-
-                                    <div class="timeline-item clearfix">
-                                        <h5 class="item-period ">2007</h5>
-                                        <span class="item-company">University of Studies</span>
-                                        <h4 class="item-title">Frontend Development</h4>
-                                        <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.</p>
+                                        <h5 class="item-period ">2019</h5>
+                                        <span class="item-company">University of net college bartar</span>
+                                        <h4 class="item-title">web developer</h4>
                                     </div>
 
                                 </div>
@@ -166,95 +79,24 @@
 
                                 <div id="timeline_2" class="timeline clearfix">
                                     <div class="timeline-item clearfix">
-                                        <h5 class="item-period current">2016 - Current</h5>
-                                        <span class="item-company">Rolling Thunder</span>
-                                        <h4 class="item-title">Lead UI/UX Designer</h4>
-                                        <p>Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna.</p>
+                                        <h5 class="item-period current">2022 - Current</h5>
+                                        <span class="item-company">Viola Payment</span>
+                                        <h4 class="item-title">Backend Developer</h4>
                                     </div>
 
                                     <div class="timeline-item clearfix">
-                                        <h5 class="item-period ">2013 - 2016</h5>
-                                        <span class="item-company">Locost Accessories</span>
-                                        <h4 class="item-title">Senior UI/UX Designer</h4>
-                                        <p>Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.</p>
+                                        <h5 class="item-period ">2021 - 2022</h5>
+                                        <span class="item-company">Web Chare</span>
+                                        <h4 class="item-title">Backend Developer</h4>
                                     </div>
 
                                     <div class="timeline-item clearfix">
-                                        <h5 class="item-period ">2011 - 2013</h5>
-                                        <span class="item-company">Sagebrush</span>
-                                        <h4 class="item-title">Junior UI/UX Designer</h4>
-                                        <p>Duis mollis nunc quis quam viverra venenatis. Nulla nulla arcu, congue vitae nunc ac, sodales ultricies diam. Nullam justo leo, tincidunt sit amet.</p>
+                                        <h5 class="item-period ">2020 - 2021</h5>
+                                        <span class="item-company">Freelancer</span>
+                                        <h4 class="item-title">Web Design</h4>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row">
-                            <div class=" col-xs-12 col-sm-12 ">
-                                <div class="p-20"></div>
-
-                                <div class="block-title">
-                                    <h2>Certificates</h2>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class=" col-xs-12 col-sm-6 ">
-                                <a href="//lmpixels.com/wp/leven-wp/wp-content/uploads/2019/11/1.jpg" class="lightbox">
-                                    <div class="certificate-item clearfix">
-                                        <div class="certi-logo">
-                                            <img src="./img/clients/client-7.png" alt="logo">
-                                        </div>
-
-                                        <div class="certi-content">
-                                            <div class="certi-title">
-                                                <h4>Psyhology of Intertnation Design</h4>
-                                            </div>
-
-                                            <div class="certi-id">
-                                                <span>Membership ID: XXXX</span>
-                                            </div>
-                                            <div class="certi-date">
-                                                <span>19 April 2018</span>
-                                            </div>
-
-                                            <div class="certi-company">
-                                                <span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class=" col-xs-12 col-sm-6 ">
-                                <a href="//lmpixels.com/wp/leven-wp/wp-content/uploads/2019/11/1.jpg" class="lightbox">
-                                    <div class="certificate-item clearfix">
-                                        <div class="certi-logo">
-                                            <img src="//lmpixels.com/wp/leven-wp/wp-content/uploads/2019/12/client-1.png" alt="logo">
-                                        </div>
-
-                                        <div class="certi-content">
-                                            <div class="certi-title">
-                                                <h4>Psyhology of Intertnation Design</h4>
-                                            </div>
-
-                                            <div class="certi-id">
-                                                <span>Membership ID: XXXX</span>
-                                            </div>
-
-                                            <div class="certi-date">
-                                                <span>19 April 2018</span>
-                                            </div>
-
-                                            <div class="certi-company">
-                                                <span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
                         </div>
 
                         <div class="row">
@@ -266,24 +108,24 @@
                         <div class="row">
                             <div class=" col-xs-12 col-sm-6 ">
                                 <div class="block-title">
-                                    <h2>Design Skills</h2>
+                                    <h2>Coding Skills</h2>
                                 </div>
 
                                 <div id="skills_1" class="skills-info skills-first-style">
                                     <!-- Skill 1 -->
                                     <div class="clearfix">
-                                        <h4>UI/UX Design</h4>
-                                        <div class="skill-value">95%</div>
+                                        <h4>Html/Css</h4>
+                                        <div class="skill-value">100%</div>
                                     </div>
 
-                                    <div id="skill_1" data-value="95" class="skill-container">
+                                    <div id="skill_1" data-value="100" class="skill-container">
                                         <div class="skill-percentage"></div>
                                     </div>
                                     <!-- /Skill 1 -->
 
                                     <!-- Skill 2 -->
                                     <div class="clearfix">
-                                        <h4>Print Design</h4>
+                                        <h4>Bootstrap</h4>
                                         <div class="skill-value">75%</div>
                                     </div>
 
@@ -294,7 +136,7 @@
 
                                     <!-- Skill 3 -->
                                     <div class="clearfix">
-                                        <h4>Graphic Design</h4>
+                                        <h4>Javascript</h4>
                                         <div class="skill-value">85%</div>
                                     </div>
                                     <div id="skill_3" data-value="85" class="skill-container">
@@ -302,15 +144,27 @@
                                     </div>
                                     <!-- Skill 3 -->
 
-                                    <!-- Skill 4 -->
                                     <div class="clearfix">
-                                        <h4>Logo Design</h4>
-                                        <div class="skill-value">90%</div>
+                                        <h4>Docker</h4>
+                                        <div class="skill-value">65%</div>
                                     </div>
-                                    <div id="skill_4" data-value="90" class="skill-container">
+                                    <div id="skill_3" data-value="65" class="skill-container">
                                         <div class="skill-percentage"></div>
                                     </div>
-                                    <!-- /Skill 4 -->
+                                    <div class="clearfix">
+                                        <h4>Php</h4>
+                                        <div class="skill-value">90%</div>
+                                    </div>
+                                    <div id="skill_3" data-value="90" class="skill-container">
+                                        <div class="skill-percentage"></div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <h4>WordPress</h4>
+                                        <div class="skill-value">90%</div>
+                                    </div>
+                                    <div id="skill_3" data-value="90" class="skill-container">
+                                        <div class="skill-percentage"></div>
+                                    </div>
                                 </div>
 
                             </div>
@@ -323,29 +177,28 @@
 
 
                                 <div id="skills_2" class="skills-info skills-first-style">
-                                    <!-- Skill 5 -->
-                                    <div class="clearfix">
-                                        <h4>HTML / CSS</h4>
-                                        <div class="skill-value">100%</div>
-                                    </div>
-                                    <div id="skill_5" data-value="100" class="skill-container">
-                                        <div class="skill-percentage"></div>
-                                    </div>
-                                    <!-- /Skill 5 -->
-
                                     <!-- Skill 6 -->
                                     <div class="clearfix">
-                                        <h4>PHP</h4>
-                                        <div class="skill-value">90%</div>
+                                        <h4>Design Pattern</h4>
+                                        <div class="skill-value">80%</div>
                                     </div>
-                                    <div id="skill_6" data-value="90" class="skill-container">
+                                    <div id="skill_6" data-value="80" class="skill-container">
+                                        <div class="skill-percentage"></div>
+                                    </div>
+                                    <!-- /Skill 6 -->
+                                    <!-- Skill 6 -->
+                                    <div class="clearfix">
+                                        <h4>OOP</h4>
+                                        <div class="skill-value">79%</div>
+                                    </div>
+                                    <div id="skill_6" data-value="79" class="skill-container">
                                         <div class="skill-percentage"></div>
                                     </div>
                                     <!-- /Skill 6 -->
 
                                     <!-- Skill 7 -->
                                     <div class="clearfix">
-                                        <h4>JavaScript</h4>
+                                        <h4>Laravel</h4>
                                         <div class="skill-value">90%</div>
                                     </div>
                                     <div id="skill_7" data-value="90" class="skill-container">
@@ -355,13 +208,31 @@
 
                                     <!-- Skill 8 -->
                                     <div class="clearfix">
-                                        <h4>Smarty / Twig</h4>
+                                        <h4>Livewire</h4>
                                         <div class="skill-value">85%</div>
                                     </div>
                                     <div id="skill_8" data-value="85" class="skill-container">
                                         <div class="skill-percentage"></div>
                                     </div>
                                     <!-- /Skill 8 -->
+                                    <!-- Skill 9 -->
+                                    <div class="clearfix">
+                                        <h4>RestFull Api</h4>
+                                        <div class="skill-value">90%</div>
+                                    </div>
+                                    <div id="skill_9" data-value="90" class="skill-container">
+                                        <div class="skill-percentage"></div>
+                                    </div>
+                                    <!-- /Skill 9 -->
+                                    <!-- Skill 10 -->
+                                    <div class="clearfix">
+                                        <h4>TDD</h4>
+                                        <div class="skill-value">75%</div>
+                                    </div>
+                                    <div id="skill_10" data-value="75" class="skill-container">
+                                        <div class="skill-percentage"></div>
+                                    </div>
+                                    <!-- /Skill 10 -->
                                 </div>
                             </div>
                         </div>
